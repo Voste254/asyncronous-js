@@ -9,8 +9,4 @@ function test(obj) {
         console.log("this is undefined");
     }
 }
-//test("hello");
-function greet(name, age) {
-    console.log("hey ".concat(name, ", you are ").concat(age, "!"));
-}
-greet('andrew', 3);
+test("hello");
