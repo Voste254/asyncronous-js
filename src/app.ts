@@ -28,9 +28,13 @@ function getArea(shape:Shapes){
     switch (shape.kind){
         case "circle":
             return Math.PI * shape.radius**2
-            break;
+            
         case "square":
             return shape.side**2
+
+        default:
+        const _exhaustiveCheck: never = shape;
+        return _exhaustiveCheck;
     }
 }
-console.log(getArea({ kind: "square", side: 5 }))
+console.log(getArea({ kind: "circle", radius: 5 }))
