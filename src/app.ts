@@ -32,9 +32,6 @@ function getArea(shape:Shapes){
         case "square":
             return shape.side**2
 
-        default:
-        const _exhaustiveCheck: never = shape;
-        return _exhaustiveCheck;
     }
 }
 console.log(getArea({ kind: "circle", radius: 5 }))
