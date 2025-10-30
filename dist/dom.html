@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /* Center the content vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #1a2a33;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Card-style container */
+        .container {
+            border: 2px solid #fff;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        /* Heading style */
+        #main-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        /* List style */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-items {
+            background-color: #f4f4f4;
+            margin: 8px 0;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .list-items:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading">Favourite Movie Franchise</h1>
+        <ul>
+            <li class="list-items"> 
+                <span>Escape </span>
+                The Matrix</li>
+            <li class="list-items">Star Wars</li>
+            <li class="list-items">Harry Potter</li>
+            <li class="list-items">Lord of the Rings</li>
+            <li class="list-items">Marvel</li>
+        </ul>
+    </div>
+
+    <script src="dom.js"></script>
+</body>
+</html>
